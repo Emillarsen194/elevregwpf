@@ -1,9 +1,7 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="elevregwpf.Properties" GeneratedClassName="Settings">
-  <Profiles />
-  <Settings>
-    <Setting Name="Sqlcon" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=192.168.0.249;Initial Catalog=doregistreing; User ID=sa; Password=Qwert12345!;Max Pool Size=10000;Connect Timeout=5;</Value>
-    </Setting>
-  </Settings>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
 </SettingsFile>
