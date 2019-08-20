@@ -8,22 +8,31 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace elevregwpf.Properties
-{
-
-
+namespace elevregwpf.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.2.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.249;Initial Catalog=doregistreing; User ID=sa; Password=Qwe" +
+            "rt12345!;Max Pool Size=10000;Connect Timeout=5;")]
+        public string Sqlcon {
+            get {
+                return ((string)(this["Sqlcon"]));
+            }
+            set {
+                this["Sqlcon"] = value;
             }
         }
     }

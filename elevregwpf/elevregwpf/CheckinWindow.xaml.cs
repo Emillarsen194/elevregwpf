@@ -10,36 +10,33 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace elevregwpf
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CheckinWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CheckinWindow : Window
     {
-        public MainWindow()
+        public CheckinWindow()
         {
             InitializeComponent();
 
-   
+
+
+            Dal datamanager = new Dal();
+
+
+            datamanager.Checkind("emil8398");
+            datamanager.addpersontoday("emil8398");
+
+            checkt.Content = "Checkede ind " + DateTime.Now.ToString();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        protected void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Hej");   
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
+            Environment.Exit(0);
         }
     }
 }
