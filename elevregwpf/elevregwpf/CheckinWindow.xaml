@@ -1,0 +1,28 @@
+﻿<Window x:Class="elevregwpf.CheckinWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:elevregwpf"
+        mc:Ignorable="d"
+        Title="CheckinWindow" Height="450" Width="800" MaxHeight="450" MaxWidth="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF17485D"/>
+                <GradientStop Color="#FF00415D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="checkt" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top" Height="109" Width="772" FontSize="48" Foreground="White">
+            <Grid Height="29.261" Width="118.049"/>
+        </Label>
+
+        <Button Content="Log ud"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="367.069" Height="68.41" Background="#FFC34146" BorderThickness="3
+"  BorderBrush="White" RenderTransformOrigin="0,0" Click="Button_Click" Margin="200,297.795,0,52.795" ForceCursor="True" Foreground="White" />
+        <Image Margin="10,10,562,311" Source="logo2.png" Stretch="Fill"/>
+        
+        
+        
+    </Grid>
+    
+</Window>
