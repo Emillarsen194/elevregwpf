@@ -24,5 +24,20 @@ namespace elevregwpf
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        protected void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hej");   
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
