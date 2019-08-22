@@ -32,7 +32,7 @@ namespace elevregwpf
 
         protected void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hej");   
+            MessageBox.Show("Du er en taber!");   
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
