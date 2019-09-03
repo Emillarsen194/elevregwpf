@@ -23,6 +23,8 @@ namespace elevregwpf
         public MainWindow()
         {
             InitializeComponent();
+
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -33,6 +35,24 @@ namespace elevregwpf
         protected void Button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Du er en taber!");   
+
+                       Dal datamanager = new Dal();
+
+            if (datamanager.ValidateUser(textBox.Text, passwordBox.Password.ToString()))
+            {
+                datamanager.Checkind(textBox.Text.ToString());
+                datamanager.addpersontoday(textBox.Text.ToString());
+
+                MainWindow window = new MainWindow();
+          
+                this.Close();
+                CheckinWindow windows2 = new CheckinWindow();
+
+                windows2.Show();
+            }
+
+
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

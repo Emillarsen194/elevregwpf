@@ -25,11 +25,7 @@ namespace elevregwpf
 
 
 
-            Dal datamanager = new Dal();
 
-
-            datamanager.Checkind("emil8398");
-            datamanager.addpersontoday("emil8398");
 
             checkt.Content = "Checkede ind " + DateTime.Now.ToString();
         }
