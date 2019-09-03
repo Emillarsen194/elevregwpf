@@ -67,7 +67,7 @@
                 <DropShadowEffect Opacity="0.8" BlurRadius="3" ShadowDepth="3"/>
             </Button.Effect>
         </Button>
-        <Image x:Name="UserIcon" HorizontalAlignment="Left" Height="35" Margin="266.5,143.458,0,0" VerticalAlignment="Top" Width="35" Source="outline_account_box_white_48dp.png"/>
+        <Image x:Name="UserIcon" HorizontalAlignment="Left" Height="35" Margin="266.5,143.458,0,0" VerticalAlignment="Top" Width="35" Source="outline_account_box_white_48dp.png" Stretch="UniformToFill"/>
         <Image x:Name="PassIcon" HorizontalAlignment="Left" Height="33" Margin="267.5,189.124,0,0" VerticalAlignment="Top" Width="35" Source="outline_lock_white_48dp.png" RenderTransformOrigin="0.505,0.495"/>
         <TextBlock x:Name="textBlock" Height="64" Margin="266.5,52,250.5,0" TextWrapping="Wrap" Text="ELEVREGISTRERING" VerticalAlignment="Top" Foreground="White" FontSize="30" Padding="0"/>
 
