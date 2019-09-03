@@ -5,7 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:elevregwpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MaxHeight="450" MaxWidth="800">
+
+        Title="ZBC Slagelse Elevregistrering" Height="450" Width="800" MaxHeight="450" MaxWidth="800" MinHeight="450" MinWidth="800">
+
+
+
     <Window.Resources>
         <Thickness x:Key="Thickness1">0</Thickness>
         <Style x:Key="ButtonWorking" TargetType="{x:Type Button}">
@@ -44,13 +48,33 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <Border x:Name="border" BorderBrush="White" BorderThickness="2" Height="179" Margin="150,116,149,0" VerticalAlignment="Top" RenderTransformOrigin="-0.671,0.478" CornerRadius="10">
-            <Button x:Name="button"  Click="Button_Click"
-                        Content="Check Ind" Style="{DynamicResource SimpleButton}" Margin="189,108.5,188,17.217" VerticalAlignment="Center" Height="49.283" Background="#FFFF4040" BorderBrush="White" BorderThickness="2"/>
-        </Border>
-        <TextBox x:Name="textBox" Height="25" Margin="311,142,311,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="TextBox_TextChanged" Width="170" TextAlignment="Center" BorderThickness="2" Background="White" HorizontalAlignment="Center" />
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Center" Height="25" VerticalAlignment="Top" Width="170" Background="White" Margin="311,184,311,0" BorderThickness="2" Foreground="Black" />
-        <Image x:Name="logozbc" HorizontalAlignment="Left" Height="100" Margin="24,16,0,0" VerticalAlignment="Top" Width="201" Source="logo2.png"/>
+        <TextBox x:Name="textBox" Height="25" Width="170" Margin="305,148,305,0" VerticalAlignment="Top" TextChanged="TextBox_TextChanged" BorderThickness="2" Background="White" HorizontalAlignment="Center" >
+            <TextBox.Effect>
+                <DropShadowEffect BlurRadius="3" ShadowDepth="3"/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBlock x:Name="textPassw" Height="18.333" TextWrapping="Wrap" Text="Adgangskode:" VerticalAlignment="Top" Foreground="White" Margin="350,174.667,350,0" Width="77" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="textBrugernavn" Height="19" Margin="360,129,360,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Text="Brugernavn"/><Run Text=":"/></TextBlock>
+        <PasswordBox x:Name="passwordBox" Height="25" Width="170" VerticalAlignment="Top" Background="White" Margin="305,193,305,0" BorderThickness="2" Foreground="Black" >
+            <PasswordBox.Effect>
+                <DropShadowEffect ShadowDepth="3" BlurRadius="3"/>
+            </PasswordBox.Effect>
+        </PasswordBox>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="82.798" VerticalAlignment="Top" Width="188.667" Source="logo2.png" Stretch="Fill" Margin="10,17,0,0"/>
+
+
+
+        <Button x:Name="button"  Click="Button_Click"
+                        Content="Check Ind" Style="{DynamicResource RoundCorner}" Margin="335,230,335,135" Background="{x:Null}" BorderBrush="White" BorderThickness="2" Foreground="White">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.8" BlurRadius="3" ShadowDepth="3"/>
+            </Button.Effect>
+        </Button>
+        <Image x:Name="UserIcon" HorizontalAlignment="Left" Height="35" Margin="266.5,143.458,0,0" VerticalAlignment="Top" Width="35" Source="outline_account_box_white_48dp.png" Stretch="UniformToFill"/>
+        <Image x:Name="PassIcon" HorizontalAlignment="Left" Height="33" Margin="267.5,189.124,0,0" VerticalAlignment="Top" Width="35" Source="outline_lock_white_48dp.png" RenderTransformOrigin="0.505,0.495"/>
+        <TextBlock x:Name="textBlock" Height="64" Margin="266.5,52,250.5,0" TextWrapping="Wrap" Text="ELEVREGISTRERING" VerticalAlignment="Top" Foreground="White" FontSize="30" Padding="0"/>
+
+
 
     </Grid>
 </Window>

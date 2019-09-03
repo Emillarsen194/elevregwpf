@@ -34,6 +34,8 @@ namespace elevregwpf
 
         protected void Button_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Du er en taber!");   
+
                        Dal datamanager = new Dal();
 
             if (datamanager.ValidateUser(textBox.Text, passwordBox.Password.ToString()))
@@ -48,6 +50,7 @@ namespace elevregwpf
 
                 windows2.Show();
             }
+
 
 
         }
